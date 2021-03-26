@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>this is the home page</h1>
+{% for eden in edens %}
+<h1>{{eden.name}}</h1>
+<h1>{{eden.age}}</h1>
+<h1>we have the same mom{{eden.mom}}</h1>
+{% endfor %}
+{% endblock content %}
